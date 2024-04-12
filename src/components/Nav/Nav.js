@@ -1,11 +1,14 @@
 import react from "react";
 import "./Nav.css";
+import { Link } from "react-router-dom";
 
 function Nav() {
   return (
-    <div className="Nav">
-      <h1>This is my Nav Component</h1>
-    </div>
+    <nav>
+      <Link to="/">Home</Link>
+      <Link to="/products">Products</Link>
+      <Link to="/order">Order</Link>
+    </nav>
   );
 }
 
