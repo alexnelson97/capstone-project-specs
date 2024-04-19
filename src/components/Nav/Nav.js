@@ -1,13 +1,25 @@
-import react from "react";
+import React from "react";
 import "./Nav.css";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 function Nav() {
+  const getActiveLinkClass = ({ isActive }) =>
+    isActive ? "nav-link active-link" : "nav-link";
+
   return (
-    <nav>
-      <Link to="/">Home</Link>
-      <Link to="/products">Products</Link>
-      <Link to="/order">Order</Link>
+    <nav className="navbar">
+      <div className="brand-title">RICKPICK</div>
+      <div className="nav-links">
+        <NavLink to="/" className={getActiveLinkClass}>
+          HOME
+        </NavLink>
+        <NavLink to="/shop" className={getActiveLinkClass}>
+          SHOP
+        </NavLink>
+        <NavLink to="/order" className={getActiveLinkClass}>
+          ORDER
+        </NavLink>
+      </div>
     </nav>
   );
 }
