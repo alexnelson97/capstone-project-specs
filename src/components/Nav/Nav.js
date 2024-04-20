@@ -8,7 +8,7 @@ function Nav() {
 
   return (
     <nav className="navbar">
-      <div className="brand-title">RICKPICK</div>
+      <div className="brand-title">RICKSPICK</div>
       <div className="nav-links">
         <NavLink to="/" className={getActiveLinkClass}>
           HOME

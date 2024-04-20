@@ -1,0 +1,36 @@
+/* Footer.css */
+.Footer {
+  width: 100%;
+  height: 153px;
+  background-color: var(--secondary-color);
+  padding-left: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 0 auto;
+}
+
+.Footer h3 {
+  border-bottom: 2px solid black;
+}
+
+.footer-info {
+  display: flex;
+  gap: 50px;
+}
+
+.footer-info p {
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .Footer {
+    padding-left: 20px;
+    flex-direction: column;
+  }
+  .footer-info {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

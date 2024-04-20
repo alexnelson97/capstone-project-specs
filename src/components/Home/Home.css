@@ -1,0 +1,102 @@
+/* Home.css */
+.hero-carousel {
+  position: relative;
+  height: 561px;
+}
+
+.slide {
+  position: relative;
+  height: 561px;
+}
+
+.slide-image {
+  width: 100%;
+  height: 561px;
+  object-fit: cover; /* Ensures the image covers the slide area */
+}
+
+.slide-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(71, 69, 69, 0.6); /* Semi-transparent overlay */
+}
+
+.slide h1,
+.slide p {
+  color: white; /* Ensures text is visible on dark background */
+  text-align: center;
+  max-width: 50%;
+}
+
+.slide h1 {
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  border-bottom: 2px solid white;
+}
+
+.shop-now {
+  width: 245px;
+  height: 56px;
+  background-color: var(--primary-color); /* Use your theme primary color */
+  color: black;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  font-family: poppins;
+}
+
+.hero-carousel .slick-dots {
+  position: absolute;
+  bottom: 100px; /* Adjust this to align with the bottom of the image */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+}
+
+.slick-dots {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  list-style: none; /* This removes the default list bullet */
+  margin: 0;
+  padding: 0;
+}
+
+.slick-dots li {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.slick-dots li button {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: white; /* Default non-active color */
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  appearance: none; /* Removes default browser styles */
+}
+
+.slick-dots li.slick-active button {
+  background-color: #ccc; /* Active dot color */
+}
+
+/* Responsive considerations for smaller devices */
+@media (max-width: 768px) {
+  .slide-content {
+    justify-content: center;
+    padding: 20px;
+  }
+}

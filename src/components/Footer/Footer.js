@@ -4,7 +4,11 @@ import "./Footer.css";
 function Footer() {
   return (
     <div className="Footer">
-      <h1>This is my Footer Component</h1>
+      <h3>CONTACT US</h3>
+      <div className="footer-info">
+        <p>EMAIL: alex@rickspick.com</p>
+        <p>PHONE: (801) 555-5555</p>
+      </div>
     </div>
   );
 }
