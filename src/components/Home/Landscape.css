@@ -1,0 +1,32 @@
+.section.landscape {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 552px;
+}
+
+.section-content.landscape {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 150px;
+  align-items: center;
+}
+
+.section.landscape h2 {
+  display: inline-block;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  border-bottom: 2px solid black; /* Black line for visibility on light background */
+}
+
+.section-text.landscape {
+  width: 350px;
+}
+
+.section img.landscape {
+  width: 600px;
+  height: 400px;
+  margin-top: 90px;
+  margin-bottom: 90px;
+}

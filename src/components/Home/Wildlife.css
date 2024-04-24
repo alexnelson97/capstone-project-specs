@@ -1,0 +1,32 @@
+.section.wildlife {
+  background-color: #e3dcd2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 552px;
+}
+
+.section-content.wildlife {
+  display: flex;
+  flex-direction: row;
+  gap: 150px;
+  align-items: center;
+}
+
+.section.wildlife h2 {
+  display: inline-block;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  border-bottom: 2px solid black; /* Black line for visibility on light background */
+}
+
+.section-text.wildlife {
+  width: 350px;
+}
+
+.section img.wildlife {
+  width: 600px;
+  height: 400px;
+  margin-top: 90px;
+  margin-bottom: 90px;
+}

@@ -4,8 +4,10 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import YosemiteImage from "../Images/Yosemite.png";
-import ForestBearImage from "../Images/forest-bear.png";
-import RedRockSpireImage from "../Images/red-rock-spire.png";
+
+import AboutUs from "./AboutUs"; // Import AboutUs component
+import Landscape from "./Landscape"; // Import Landscape component
+import Wildlife from "./Wildlife"; // Import Wildlife component
 
 const settings = {
   dots: true,
@@ -59,33 +61,9 @@ function Home() {
           </div>
         </Slider>
       </div>
-      <div className="section">
-        <h2>ABOUT US</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud
-        </p>
-        <img src={ForestBearImage} alt="Bear in Green Forest" />
-      </div>
-      <div className="section">
-        <h2>LANDSCAPE</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud
-        </p>
-        <img src={RedRockSpireImage} alt="Red Rock Spire" />
-      </div>
-      <div className="section">
-        <h2>WILDLIFE</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud
-        </p>
-        <img src={RedRockSpireImage} alt="Red Rock Spire" />
-      </div>
+      <AboutUs /> {/* Use AboutUs component */}
+      <Landscape /> {/* Use Landscape component */}
+      <Wildlife /> {/* Use Wildlife component */}
     </div>
   );
 }
