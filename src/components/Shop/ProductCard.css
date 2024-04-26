@@ -1,0 +1,20 @@
+/* Styling for each individual product card */
+.product-card {
+  width: 260px; /* Width of the card */
+  padding: 25px; /* Padding around the content within the card */
+  margin-bottom: 50px; /* Space below each card if stacked vertically */
+  background-color: #e3dcd2cc; /* Optional: sets background color of the card */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: adds subtle shadow for depth */
+}
+
+.product-card img {
+  width: 260px; /* Fixed width for the image */
+  height: 260px; /* Fixed height for the image */
+  object-fit: cover; /* Ensures the image covers the area properly */
+}
+
+.product-card h3,
+.product-card p {
+  margin-top: 7px; /* Spacing between elements */
+  text-align: left; /* Aligns text to the left */
+}

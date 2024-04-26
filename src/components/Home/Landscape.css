@@ -6,11 +6,11 @@
   height: 552px;
 }
 
-.section-content.landscape {
+.section.landscape .section-content {
   display: flex;
-  flex-direction: row-reverse;
-  gap: 150px;
-  align-items: center;
+  gap: 50px; /* Space between text and image */
+  align-items: center; /* Align items vertically */
+  max-width: 1200px; /* Max width of the content within the section */
 }
 
 .section.landscape h2 {
@@ -29,4 +29,5 @@
   height: 400px;
   margin-top: 90px;
   margin-bottom: 90px;
+  object-fit: cover;
 }

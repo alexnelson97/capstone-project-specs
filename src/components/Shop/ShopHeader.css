@@ -1,0 +1,35 @@
+/* Styling for the ShopHeader component */
+.ShopHeader {
+  display: flex;
+  justify-content: center; /* Centers the content horizontally */
+  align-items: center; /* Centers the content vertically */
+  height: 358px; /* Fixed height of the header */
+  background-color: #e3dcd2; /* Background color */
+  padding: 0 50px; /* Padding on the left and right */
+}
+
+.section.ShopHeader .section-content {
+  display: flex;
+  gap: 50px; /* Space between text and image */
+  align-items: center; /* Align items vertically */
+  width: 100%; /* Takes full width to utilize the available space */
+  max-width: 1200px; /* Max width of the content within the section */
+}
+
+.section-text.ShopHeader {
+  flex-grow: 1; /* Allows text area to grow and fill space */
+  min-width: 0; /* Fixes flexbox overflow issues */
+}
+
+.section.ShopHeader .section-content .section-text h2 {
+  display: inline-block;
+  margin-bottom: 10px;
+  border-bottom: 2px solid black; /* White underline for contrast */
+  color: black; /* Sets text color to white for visibility */
+}
+
+.section img.ShopHeader {
+  width: 660px; /* Fixed width of the image */
+  height: 195px; /* Fixed height of the image */
+  object-fit: cover; /* Ensures the image covers the area without distortion */
+}

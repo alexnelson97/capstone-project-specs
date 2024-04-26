@@ -6,11 +6,11 @@
   height: 552px;
 }
 
-.section-content.wildlife {
+.section.wildlife .section-content {
   display: flex;
-  flex-direction: row;
-  gap: 150px;
-  align-items: center;
+  gap: 50px; /* Space between text and image */
+  align-items: center; /* Align items vertically */
+  max-width: 1200px; /* Max width of the content within the section */
 }
 
 .section.wildlife h2 {

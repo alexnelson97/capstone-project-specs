@@ -5,9 +5,9 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import YosemiteImage from "../Images/Yosemite.png";
 
-import AboutUs from "./AboutUs"; // Import AboutUs component
-import Landscape from "./Landscape"; // Import Landscape component
-import Wildlife from "./Wildlife"; // Import Wildlife component
+import AboutUs from "./AboutUs";
+import Landscape from "./Landscape";
+import Wildlife from "./Wildlife";
 
 const settings = {
   dots: true,
@@ -61,9 +61,9 @@ function Home() {
           </div>
         </Slider>
       </div>
-      <AboutUs /> {/* Use AboutUs component */}
-      <Landscape /> {/* Use Landscape component */}
-      <Wildlife /> {/* Use Wildlife component */}
+      <AboutUs />
+      <Landscape />
+      <Wildlife />
     </div>
   );
 }
