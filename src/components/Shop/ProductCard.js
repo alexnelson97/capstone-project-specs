@@ -2,13 +2,17 @@ import React from "react";
 import "./ProductCard.css";
 import BryceCanyon from "../Images/Bryce-Canyon.png";
 
-function ProductCard() {
+function ProductCard({ id, title, price, image_url }) {
   return (
     <div className="product-card">
-      <img src={BryceCanyon} alt="Bryce Canyon" />
-      <h3>Product Title</h3>
-      <p>$Price</p>
-      <p>SKU #</p>
+      <img
+        src={image_url}
+        alt={title}
+        style={{ width: "100%", height: "auto" }}
+      />
+      <h3>{title}</h3>
+      <p>${price}</p>
+      <p>SKU: {id}</p>
     </div>
   );
 }

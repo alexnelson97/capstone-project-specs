@@ -1,7 +1,25 @@
-import react from "react";
+import React from "react";
 import "./orderForm.css";
 
 function OrderForm() {
+  const handleSubmit = (event) => {
+    event.preventDefault(); // Prevent default form submission
+    const formData = new FormData(event.target);
+    const orderData = Object.fromEntries(formData.entries());
+
+    // Assuming your API endpoint for creating an order is POST /orders
+    fetch("http://localhost:4001/orders", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(orderData),
+    })
+      .then((response) => response.json())
+      .then((data) => console.log("Order placed:", data))
+      .catch((error) => console.error("Error placing order:", error));
+  };
+
   return (
     <div className="order-form-page">
       <h1>Place Your Order</h1>
@@ -12,7 +30,7 @@ function OrderForm() {
           alt="Landscape image"
           className="order-image"
         />
-        <form className="order-form">
+        <form className="order-form" onSubmit={handleSubmit}>
           <div className="form-group">
             <label htmlFor="name">Name:</label>
             <input type="text" id="name" name="name" required />
