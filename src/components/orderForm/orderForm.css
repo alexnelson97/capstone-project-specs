@@ -1,0 +1,59 @@
+.order-form-page {
+  background: #e3dcd2;
+  padding: 20px;
+  text-align: center;
+  height: 700px;
+}
+
+.order-text {
+  margin-bottom: 20px; /* Add some space between the text and the form/image */
+}
+
+.order-text h1 {
+  border-bottom: 2px solid black;
+  display: inline-block;
+  margin-bottom: 0px;
+}
+
+.order-content {
+  display: flex;
+  justify-content: center; /* Center the form and image horizontally */
+  align-items: flex-start; /* Align items at the top */
+  gap: 50px; /* Space between the image and the form */
+}
+
+.order-image {
+  width: 510px;
+  height: 385px;
+  object-fit: cover;
+}
+
+.order-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 450px; /* Maximum width for the form */
+}
+
+.order-form input,
+.order-form textarea {
+  width: 100%; /* Make form inputs take the full width */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.order-form button {
+  width: 245px;
+  height: 56px;
+  background-color: #cc8b65;
+  color: black;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  font-family: poppins;
+}
+
+.order-form button:hover {
+  background-color: #a77152;
+}

@@ -92,6 +92,7 @@
   cursor: pointer;
   font-size: 18px;
   font-family: poppins;
+  text-decoration: none;
 }
 
 @media (max-width: 768px) {
