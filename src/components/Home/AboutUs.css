@@ -8,22 +8,22 @@
 
 .section.about-us .section-content {
   display: flex;
-  gap: 50px; /* Space between text and image */
-  align-items: center; /* Align items vertically */
-  max-width: 1200px; /* Max width of the content within the section */
+  gap: 50px;
+  align-items: center;
+  max-width: 1200px;
 }
 
 .section.about-us .section-content .section-text {
   width: 350px;
-  color: white; /* Ensures all text in the section is white */
+  color: white;
 }
 
 .section.about-us .section-content .section-text h2 {
   display: inline-block;
   margin-bottom: 10px;
   padding-bottom: 5px;
-  border-bottom: 2px solid white; /* White underline for contrast */
-  color: white; /* Sets text color to white for visibility */
+  border-bottom: 2px solid white;
+  color: white;
 }
 
 .section.about-us img {

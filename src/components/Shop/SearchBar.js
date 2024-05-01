@@ -5,7 +5,7 @@ function SearchBar({ onSearch }) {
 
   const handleInputChange = (event) => {
     setSearchTerm(event.target.value);
-    onSearch(event.target.value); // Trigger the search function passed from the parent component
+    onSearch(event.target.value);
   };
 
   return (

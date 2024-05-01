@@ -1,5 +1,5 @@
 import React from "react";
-import "./Landscape.css"; // Import specific CSS for this component
+import "./Landscape.css";
 import RedRockSpireImage from "../Images/red-rock-spire.png";
 
 function Landscape() {

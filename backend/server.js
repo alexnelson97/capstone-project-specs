@@ -1,7 +1,7 @@
 require("dotenv").config();
 const express = require("express");
 const cors = require("cors");
-const controller = require("./controller"); // Import the controller
+const controller = require("./controller");
 
 const app = express();
 const port = process.env.PORT || 4001;
@@ -18,12 +18,6 @@ app.get("/products", controller.getProducts);
 
 // Additional route to handle order creation
 app.post("/orders", controller.createOrder);
-
-// Error handling middleware should be last, after all routes
-app.use((err, req, res, next) => {
-  console.error(err.stack);
-  res.status(500).send("Something broke!");
-});
 
 app.listen(port, () => {
   console.log(`Server running on port ${port}`);

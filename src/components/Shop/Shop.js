@@ -18,7 +18,7 @@ function Shop() {
   };
 
   useEffect(() => {
-    fetchProducts(); // Fetch all products initially
+    fetchProducts();
   }, []);
 
   return (
@@ -29,11 +29,10 @@ function Shop() {
 
       <div className="search-bar">
         <SearchBar onSearch={fetchProducts} />{" "}
-        {/* Pass fetchProducts to SearchBar */}
       </div>
 
       <div className="product-grid">
-        <ProductList products={products} /> {/* Pass products to ProductList */}
+        <ProductList products={products} />
       </div>
     </div>
   );

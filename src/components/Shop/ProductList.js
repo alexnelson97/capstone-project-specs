@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import ProductCard from "./ProductCard";
-import SearchBar from "./SearchBar"; // Assuming you have a SearchBar component
+import SearchBar from "./SearchBar";
 
 function ProductList() {
   const [products, setProducts] = useState([]);
@@ -10,6 +10,7 @@ function ProductList() {
     const url = `http://localhost:4001/products${
       searchTerm ? `?search=${encodeURIComponent(searchTerm)}` : ""
     }`;
+    console.log(url);
     fetch(url)
       .then((response) => {
         if (!response.ok) {
@@ -19,7 +20,7 @@ function ProductList() {
       })
       .then((data) => setProducts(data))
       .catch((error) => console.error("Error fetching products:", error));
-  }, [searchTerm]); // Re-run the effect if searchTerm changes
+  }, [searchTerm]);
 
   const handleSearch = (term) => {
     setSearchTerm(term);
@@ -35,7 +36,7 @@ function ProductList() {
             id={product.id}
             title={product.title}
             price={product.price}
-            imageUrl={product.image_url}
+            image_url={product.image_url}
           />
         ))}
       </div>

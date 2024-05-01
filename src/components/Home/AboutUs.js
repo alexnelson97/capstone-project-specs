@@ -1,5 +1,5 @@
 import React from "react";
-import "./AboutUs.css"; // Import specific CSS for this component
+import "./AboutUs.css";
 import ForestBearImage from "../Images/forest-bear.png";
 
 function AboutUs() {

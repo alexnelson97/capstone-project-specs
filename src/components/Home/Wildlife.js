@@ -1,5 +1,5 @@
 import React from "react";
-import "./Wildlife.css"; // Import specific CSS for this component
+import "./Wildlife.css";
 import RedRockSpireImage from "../Images/red-rock-spire.png";
 
 function Wildlife() {

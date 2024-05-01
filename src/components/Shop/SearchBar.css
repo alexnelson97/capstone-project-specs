@@ -1,23 +1,22 @@
-/* Styling for the search bar */
 .search-bar {
-  margin-left: 30px; /* Adjust this value based on the exact alignment with the grid */
-  margin-bottom: 20px; /* Optional: provides space between the search bar and the grid */
+  margin-left: 30px;
+  margin-bottom: 20px;
   margin-top: 20px;
 }
 
 .search-bar input[type="text"] {
-  padding: 10px; /* Padding inside the input for text */
-  font-family: "Poppins", sans-serif; /* Poppins font for the text */
-  font-size: 15px; /* Font size as specified */
-  font-style: normal; /* Normal font style */
-  font-weight: 400; /* Font weight as specified */
-  line-height: normal; /* Normal line height */
-  color: #858585; /* Font color as specified */
-  border: 1px solid #ccc; /* Adds a border to the input, customize as needed */
-  border-radius: 4px; /* Slightly rounded corners for the input */
-  outline: none; /* Removes outline on focus */
+  padding: 10px;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: #858585;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
 }
 
 .search-bar input[type="text"]::placeholder {
-  color: #858585; /* Color for the placeholder text */
+  color: #858585;
 }

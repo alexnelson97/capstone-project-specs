@@ -8,16 +8,16 @@
 
 .section.wildlife .section-content {
   display: flex;
-  gap: 50px; /* Space between text and image */
-  align-items: center; /* Align items vertically */
-  max-width: 1200px; /* Max width of the content within the section */
+  gap: 50px;
+  align-items: center;
+  max-width: 1200px;
 }
 
 .section.wildlife h2 {
   display: inline-block;
   margin-bottom: 10px;
   padding-bottom: 5px;
-  border-bottom: 2px solid black; /* Black line for visibility on light background */
+  border-bottom: 2px solid black;
 }
 
 .section-text.wildlife {
