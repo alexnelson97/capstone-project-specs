@@ -2,8 +2,7 @@
   display: grid;
   grid-template-columns: repeat(3, 260px);
   justify-content: space-between;
-  gap: 50px;
-  padding: 0 50px;
+  gap: 100px;
   margin: 0 auto;
   width: 100%;
   max-width: calc(3 * 260px + 4 * 50px);

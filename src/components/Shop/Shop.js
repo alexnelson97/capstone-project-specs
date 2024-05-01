@@ -27,10 +27,6 @@ function Shop() {
         <ShopHeader />
       </div>
 
-      <div className="search-bar">
-        <SearchBar onSearch={fetchProducts} />{" "}
-      </div>
-
       <div className="product-grid">
         <ProductList products={products} />
       </div>

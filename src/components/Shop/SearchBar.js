@@ -12,7 +12,7 @@ function SearchBar({ onSearch }) {
     <div className="search-bar">
       <input
         type="text"
-        placeholder="Search products..."
+        placeholder="SEARCH"
         value={searchTerm}
         onChange={handleInputChange}
       />

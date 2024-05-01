@@ -1,8 +1,7 @@
-/* Styling for each individual product card */
 .product-card {
   width: 260px;
   padding: 25px;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
   background-color: #e3dcd2cc;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
