@@ -1,6 +1,6 @@
 import React from "react";
 import "./Wildlife.css";
-import RedRockSpireImage from "../Images/red-rock-spire.png";
+import Squirrel from "../Images/Squirrel.png";
 
 function Wildlife() {
   return (
@@ -16,7 +16,7 @@ function Wildlife() {
             Southeast.
           </p>
         </div>
-        <img img src={RedRockSpireImage} alt="Red Rock Spire" />
+        <img src={Squirrel} alt="Squirrel eating nuts" />
       </div>
     </div>
   );

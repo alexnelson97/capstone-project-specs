@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import "./orderForm.css";
 import RedRockSpire from "../Images/red-rock-spire.png";
 
 function OrderForm() {
+  const [successMessage, setSuccessMessage] = useState("");
+  const [errorMessage, setErrorMessage] = useState("");
+
   const handleSubmit = (event) => {
     event.preventDefault();
     const formData = new FormData(event.target);
@@ -15,9 +18,22 @@ function OrderForm() {
       },
       body: JSON.stringify(orderData),
     })
-      .then((response) => response.json())
-      .then((data) => console.log("Order placed:", data))
-      .catch((error) => console.error("Error placing order:", error));
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error("Failed to submit order");
+        }
+        return response.json();
+      })
+      .then((data) => {
+        console.log("Order placed:", data);
+        setSuccessMessage("Order submitted successfully!");
+        setErrorMessage("");
+      })
+      .catch((error) => {
+        console.error("Error placing order:", error);
+        setErrorMessage(error.message);
+        setSuccessMessage("");
+      });
   };
 
   return (
@@ -25,6 +41,8 @@ function OrderForm() {
       <div className="order-text">
         <h1>ORDER FORM</h1>
         <p>Please fill out the form below to complete your order.</p>
+        {successMessage && <p className="success-message">{successMessage}</p>}
+        {errorMessage && <p className="error-message">{errorMessage}</p>}
       </div>
       <div className="order-content">
         <img src={RedRockSpire} alt="Red Rock Spire" className="order-image" />
@@ -50,13 +68,7 @@ function OrderForm() {
             placeholder="Phone"
             required
           />
-          <input
-            type="text"
-            id="skus"
-            name="skus"
-            placeholder="SKUs"
-            required
-          />
+          <input type="text" id="sku" name="sku" placeholder="SKU" required />
           <textarea
             id="message"
             name="message"

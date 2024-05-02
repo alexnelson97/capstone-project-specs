@@ -1,6 +1,5 @@
 import React from "react";
 import "./ProductCard.css";
-import BryceCanyon from "../Images/Bryce-Canyon.png";
 
 function ProductCard({ id, title, price, image_url }) {
   return (

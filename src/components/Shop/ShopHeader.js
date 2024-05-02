@@ -9,8 +9,8 @@ function ShopHeader() {
         <div className="section-text">
           <h2>SHOP</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur incididunt ut labore et
-            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            Discover stunning landscapes and captivating wildlife captured
+            through the lens of our seasoned photographer.
           </p>
         </div>
         <img src={RedRockLandscape} alt="bear in forest" />
